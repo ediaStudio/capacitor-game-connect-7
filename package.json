@@ -1,6 +1,6 @@
 {
   "name": "capacitor-game-connect-7",
-  "version": "7.0.2",
+  "version": "7.0.3",
   "description": "Use Game Services and Game Connect",
   "main": "dist/plugin.cjs.js",
   "module": "dist/esm/index.js",
