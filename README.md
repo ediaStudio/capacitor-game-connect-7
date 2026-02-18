@@ -5,14 +5,15 @@ Capacitor plugin for connecting and using services by Apple Game Center and Goog
 
 This plugin is maintained and distributed by [EdiaStudio](https://ediastudio.com/).
 
-**Repository:** [https://github.com/ediaStudio/capacitor-game-connect-7](https://github.com/ediaStudio/capacitor-game-connect-7)
+**Repository:** [https://github.com/ediaStudio/capacitor-game-connect-8](https://github.com/ediaStudio/capacitor-game-connect-8)
 **Homepage:** [https://ediastudio.com/](https://ediastudio.com/)
 
 ---
 
 | Capacitor Version | Support Status |
 | -----------    | :----:   |
-| Capacitor v7   | ✅       |
+| Capacitor v8   | ✅       |
+| Capacitor v7   | ❌       |
 | Capacitor v6   | ❌       |
 | Capacitor v5   | ❌       |
 | Capacitor v4   | ❌       |
@@ -24,7 +25,7 @@ This plugin is maintained and distributed by [EdiaStudio](https://ediastudio.com
 🚧 - WIP Support
 ❌ - No plans to support
 
-**Note:** This plugin has been updated to Capacitor 7 and is no longer compatible with older versions.
+**Note:** This plugin has been updated to Capacitor 8 and is no longer compatible with older versions.
 
 ## Maintainers
 
@@ -62,32 +63,60 @@ Checkout these existing Ionic/Angular/Capacitor mobile game with the plugin inst
 ## Install
 
 ```bash
-npm install capacitor-game-connect-7
+npm install capacitor-game-connect-8
 npx cap sync
 ```
 
-## Capacitor 7 Requirements
+## Capacitor 8 Requirements
 
-This plugin requires Capacitor 7 and has the following system requirements:
+This plugin requires Capacitor 8 and has the following system requirements:
 
 ### Android
-- Android Studio Ladybug (2024.2.1) or newer
-- Android Gradle Plugin 8.5.2+
-- Gradle 8.7+
-- compileSdkVersion 35
-- minSdkVersion 23
-- targetSdkVersion 35
+- Android Studio Otter (2025.2.1) or newer
+- Android Gradle Plugin 8.13.0+
+- Gradle 8.14.3+
+- compileSdkVersion 36
+- minSdkVersion 24
+- targetSdkVersion 36
 - Java 21
 
 ### iOS
-- Xcode 16.0 or newer
-- iOS Deployment Target 14.0+
+- Xcode 26.0 or newer
+- iOS Deployment Target 15.0+
 - Swift 5.9+
 
 ### Node.js
-- Node.js 20 or higher
+- Node.js 22 or higher
 
 ## Migration from Previous Versions
+
+If you're upgrading from `capacitor-game-connect-7`:
+
+1. **Uninstall the old package:**
+   ```bash
+   npm uninstall capacitor-game-connect-7
+   ```
+
+2. **Install the new package:**
+   ```bash
+   npm install capacitor-game-connect-8
+   ```
+
+3. **Update your imports:**
+   ```typescript
+   // Old import
+   import { CapacitorGameConnect } from 'capacitor-game-connect-7';
+   
+   // New import
+   import { CapacitorGameConnect } from 'capacitor-game-connect-8';
+   ```
+
+4. **Sync your project:**
+   ```bash
+   npx cap sync
+   ```
+
+5. **Update your Android and iOS projects** to meet the Capacitor 8 requirements listed above.
 
 If you're upgrading from `@openforge/capacitor-game-connect` v5 or earlier:
 
@@ -98,7 +127,7 @@ If you're upgrading from `@openforge/capacitor-game-connect` v5 or earlier:
 
 2. **Install the new package:**
    ```bash
-   npm install capacitor-game-connect-7
+   npm install capacitor-game-connect-8
    ```
 
 3. **Update your imports:**
@@ -107,7 +136,7 @@ If you're upgrading from `@openforge/capacitor-game-connect` v5 or earlier:
    import { CapacitorGameConnect } from '@openforge/capacitor-game-connect';
    
    // New import
-   import { CapacitorGameConnect } from 'capacitor-game-connect-7';
+   import { CapacitorGameConnect } from 'capacitor-game-connect-8';
    ```
 
 4. **Sync your project:**
@@ -115,7 +144,7 @@ If you're upgrading from `@openforge/capacitor-game-connect` v5 or earlier:
    npx cap sync
    ```
 
-5. **Update your Android and iOS projects** to meet the Capacitor 7 requirements listed above.
+5. **Update your Android and iOS projects** to meet the Capacitor 8 requirements listed above.
 
 ## Additional Code Setup
 

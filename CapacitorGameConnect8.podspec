@@ -3,7 +3,7 @@ require 'json'
 package = JSON.parse(File.read(File.join(__dir__, 'package.json')))
 
 Pod::Spec.new do |s|
-  s.name = 'CapacitorGameConnect7'
+  s.name = 'CapacitorGameConnect8'
   s.version = package['version']
   s.summary = package['description']
   s.license = package['license']
@@ -11,7 +11,7 @@ Pod::Spec.new do |s|
   s.author = package['author']
   s.source = { :git => package['repository']['url'], :tag => s.version.to_s }
   s.source_files = 'ios/Plugin/**/*.{swift,h,m,c,cc,mm,cpp}'
-  s.ios.deployment_target  = '14.0'
-  s.dependency 'Capacitor', '~> 7.0'
+  s.ios.deployment_target = '15.0'
+  s.dependency 'Capacitor', '~> 8.0'
   s.swift_version = '5.9'
 end
